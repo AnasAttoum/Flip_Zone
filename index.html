@@ -1,0 +1,267 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./LOGO.svg">
+    <title>Flip Zone</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex justify-between p-5 header" style="background-color: var(--primary);">
+        <div>Flip Zone</div>
+        <div>Round: <span id="round"></span> | Result: <span id="failNum" style="color: red;"></span> - <span id="successNum" style="color: green;"></span> | Time: <span id="time"></span> </div>
+        <div>Move: <span id="move"></span> | correct: <span id="correct"></span></div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center overflow-hidden main">
+        <div class="p-5 py-2 m-5 rounded-2xl reset" onclick="resetAll()">Reset</div>
+        <div id="gameOver" class="p-5 m-5" style="color: red">G A M E &nbsp; O V E R</div>
+        <div id="winner" class="p-5 m-5" style="color: green">W I N N E R</div>
+        <div id="cards" class="flex flex-wrap justify-center gap-5 p-5 pt-5">
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+        
+                    <div class="rounded-2xl front">
+        
+                    </div>
+        
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+        
+                    <div class="rounded-2xl front">
+        
+                    </div>
+        
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+        
+                    <div class="rounded-2xl front">
+        
+                    </div>
+        
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+        
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+    
+                    <div class="rounded-2xl front">
+    
+                    </div>
+    
+                    <div class="flex justify-center items-center rounded-2xl back">
+                    </div>
+    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
