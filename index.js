@@ -56,8 +56,8 @@ backs.forEach((back, index) => {
 const cards = document.querySelectorAll('.card')
 const resets = document.querySelectorAll('.reset')
 const reset = () => {
-    minute = 2;
-    second = 0;
+    minute = 1;
+    second = 15;
 
     move.innerHTML = 0
     correct.innerHTML = 0
@@ -84,8 +84,8 @@ const resetAll = () => {
 let time = document.getElementById('time')
 let gameOver = document.getElementById('gameOver')
 let winner = document.getElementById('winner')
-let minute = 2;
-let second = 0;
+let minute = 1;
+let second = 15;
 
 const clock = setInterval(() => {
     time.innerHTML = `${minute} : ${second < 10 ? '0' + second : second}`;
@@ -98,8 +98,8 @@ const clock = setInterval(() => {
             second = 59;
         }
         else {
-            minute = 2;
-            second = 2;
+            minute = 1;
+            second = 15;
             failNum.innerHTML = parseInt(failNum.innerHTML) + 1
             round.innerHTML = parseInt(round.innerHTML) + 1
             cardsElement.classList.add('sliderRight')
