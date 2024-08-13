@@ -105,7 +105,7 @@ const clock = setInterval(() => {
             cardsElement.classList.add('sliderRight')
             setTimeout(() => {
                 cardsElement.style.display = 'none'
-                gameOver.style.display = 'block'
+                gameOver.style.display = 'flex'
                 setTimeout(() => {
                     gameOver.style.display = 'none'
                     cardsElement.style.display = 'flex'
@@ -168,7 +168,7 @@ cards.forEach((card, index) => {
                                 cardsElement.classList.add('sliderRight')
                                 setTimeout(() => {
                                     cardsElement.style.display = 'none'
-                                    winner.style.display = 'block'
+                                    winner.style.display = 'flex'
                                     setTimeout(() => {
                                         winner.style.display = 'none'
                                         cardsElement.style.display = 'flex'
