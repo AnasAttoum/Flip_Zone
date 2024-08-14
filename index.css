@@ -138,4 +138,12 @@ body {
     #winner {
         font-size: 20px !important;
     }
+
+}
+
+@media (width<350px) {
+    .back svg{
+        width: 70%;
+        height: 70%;
+    }
 }
