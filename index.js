@@ -167,6 +167,8 @@ cards.forEach((card, index) => {
                             correct.innerHTML = parseInt(correct.innerHTML) + 1
 
                             if (parseInt(correct.innerHTML) === 9) {
+                                minute=1;
+                                second=15;
                                 setTimeout(() => {
                                     successNum.innerHTML = parseInt(successNum.innerHTML) + 1
                                     round.innerHTML = parseInt(round.innerHTML) + 1
