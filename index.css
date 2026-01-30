@@ -18,7 +18,6 @@ body {
 }
 
 .card {
-    width: 14%;
     aspect-ratio: 1/1;
     perspective: 1000px;
 }
@@ -116,13 +115,9 @@ body {
         gap: 15px;
     }
 
-    .card {
-        width: 18%;
-    }
-
     svg {
-        width: 4em;
-        height: 4em;
+        width: 3em;
+        height: 3em;
     }
 }
 
@@ -131,9 +126,6 @@ body {
         font-size: 10px;
     }
 
-    .card {
-        width: 22%;
-    }
     #gameOver,
     #winner {
         font-size: 20px !important;
