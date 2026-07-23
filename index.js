@@ -39,8 +39,8 @@ cardsContainer.innerHTML = cardsData
     return `
       <div class="card">
         <div class="card-inner">
-          <div class="rounded-2xl front"></div>
-          <div class="flex justify-center items-center rounded-2xl back"></div>
+          <div class="rounded-lg front"></div>
+          <div class="flex justify-center items-center rounded-lg back"></div>
         </div>
       </div>
     `;
@@ -52,7 +52,6 @@ const cardsElement = document.getElementById('cards')
 const backs = document.querySelectorAll('.back')
 backs.forEach((back, index) => {
     back.innerHTML = CARDS[index]
-
 })
 
 const cards = document.querySelectorAll('.card')

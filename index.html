@@ -13,11 +13,11 @@
     <div class="flex justify-between p-5 header" style="background-color: var(--primary);">
         <div>Flip Zone</div>
         <div>Round: <span id="round"></span> | Result: <span id="failNum" style="color: var(--gameOver);"></span> - <span id="successNum" style="color: green;"></span> | Time: <span id="time"></span> </div>
-        <div>Move: <span id="move"></span> | correct: <span id="correct"></span></div>
+        <div>Move: <span id="move"></span> | Correct: <span id="correct"></span></div>
     </div>
 
     <div class="flex flex-col justify-center items-center overflow-hidden main">
-        <div class="p-5 py-2 m-5 rounded-2xl reset" onclick="resetAll()">Reset</div>
+        <div class="p-5 py-2 m-5 rounded-lg reset" onclick="resetAll()">Reset</div>
         <div id="gameOver" class="flex flex-col justify-center items-center gap-5 m-5" style="color: var(--gameOver);font-size: 30px; font-weight: 700;">
             <div>G A M E &nbsp; O V E R</div>
             <img style="width: 50%;" src="./Game Over.png" alt="Game Over">
